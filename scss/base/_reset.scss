@@ -33,15 +33,6 @@ img {
 	overflow: hidden;
 }
 
-.link {
-	text-decoration: none;
-	font-family: inherit;
-}
-
-.list {
-	list-style: none;
-}
-
 /* Hidden */
 
 .visually-hidden {
@@ -61,4 +52,7 @@ img {
 
 .no-user-select {
 	user-select: none;
+	@media screen and (max-width: ($mobile - 0.02px)) {
+			font-size: 10px;
+		}
 }

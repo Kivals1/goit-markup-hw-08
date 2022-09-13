@@ -7,9 +7,10 @@
   .doing__items,
   .team__members,
   .clients__items {
-                  display: flex;
-                  gap: 30px;
-                  align-items: center;
+    @extend %list;
+     display: flex;
+     gap: $indent;
+     align-items: center;
   }
   
   /* h2 title for sections */

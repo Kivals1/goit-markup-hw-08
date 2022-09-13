@@ -3,6 +3,10 @@
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
+	@media screen and (min-width: $desktop) {
+			padding-top: 94px;
+			padding-bottom: 94px;
+		}
 }
 
 .no-top-padding {
@@ -15,14 +19,53 @@
 	margin-left: auto;
 	padding-right: 15px;
 	padding-left: 15px;
+	
+	@media screen and (min-width: $mobile) {
+			width: $mobile;
+		}
+	
+	@media screen and (min-width: $tablet) {
+			width: $tablet;
+		}
+	
+	@media screen and (min-width: $desktop) {
+			width: $desktop;
+		}
 }
 
 .container--flex {
+	@media screen and (min-width: $tablet){
 	display: flex;
 	align-items: center;
+	}
 }
 
 .container--flex-baseline {
+	text-align: center;
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+	gap: 60px;
+	align-items: center;
+
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02px)) {
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: baseline;
+	}
+
+	@media screen and (min-width: $desktop) {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		text-align: start;
+		gap: 0;
+	}
+}
+.container-mobile {
+	@media screen and (max-width: ($tablet - 0.02px)) {
+		min-height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
