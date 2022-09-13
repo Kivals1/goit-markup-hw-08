@@ -1,6 +1,8 @@
 /* Logo */
 
 .logo {
+	@extend %link;
+	left: 15px;
 	display: inline-block;
 	font-family: $second-font;
 	font-weight: 700;
@@ -8,6 +10,16 @@
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: $active-color;
+
+	@media screen and (min-width: ($tablet - 0.02px)) {
+			position: static;
+		}
+	
+		@media screen and (min-width: $desktop) {
+			font-size: 26px;
+			line-height: 1.19;
+			letter-spacing: 0.03em;
+		}
 }
 
 .logo--mode-light {
