@@ -20,51 +20,75 @@
 		<header class="header">
 			<div class="container">
 				<div class="container-mobile container--flex">
-				<a class="logo link" lang="en" href="./index.html">
-					Web<span class="logo--mode-light">Studio</span>
-				</a>
-				<button class="mobile-btn" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
-					<svg width="40" height="40" aria-label="Перемикач мобільного меню">
-						<use class="mobile-btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
-						<use class="mobile-btn__icon-close" href="./images/icons.svg#icon-menu-close"></use>
-					</svg>
-				</button>
-
-				<nav class="navigation navigation--margin-left">
-					<ul class="nav-menu list">
-						<li class="nav-menu__item">
-							<a class="nav-menu__link link nav-menu__link--active" href="./index.html">Студія</a>
-						</li>
-						<li class="nav-menu__item">
-							<a class="nav-menu__link link" href="./portfolio.html">Портфоліо</a>
-						</li>
-						<li class="nav-menu__item">
-							<a class="nav-menu__link link" href="#contacts">Контакти</a>
-						</li>
-					</ul>
-				</nav>
-
-				<ul class="address-menu list">
-					<li class="address-menu__item">
-						<a class="address-menu__link link" href="mailto:info@devstudio.com" aria-label="e-mail">
-							<svg class="icon-letter" width="16" height="12">
-								<use href="./images/icons.svg#icon-letter"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="address-menu__item">
-						<a class="address-menu__link link" href="tel:+380961111111" aria-label="phone number">
-							<svg class="icon-phone" width="10" height="16">
-								<use href="./images/icons.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</div>
+					<a class="logo" lang="en" href="./index.html"> Web<span class="logo--mode-light">Studio</span> </a>
+						<button class="mobile-btn" type="button" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+							<svg width="40" height="40" aria-label="Перемикач мобільного меню">
+								<use class="mobile-btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+								<use class="mobile-btn__icon-close" href="./images/icons.svg#icon-menu-close"></use>
+								</svg>
+						</button>
+						<div class="mobile-menu" id="mobile-menu" data-menu>
+							<nav class="navigation navigation--margin-left">
+								<ul class="nav-menu">
+									<li class="nav-menu__item">
+											<a class="nav-menu__link nav-menu__link--active" href="./index.html">Студія</a>
+									</li>
+										<li class="nav-menu__item">
+											<a class="nav-menu__link" href="./portfolio.html">Портфоліо</a>
+									</li>
+										<li class="nav-menu__item">
+											<a class="nav-menu__link" href="#contacts">Контакти</a>
+										</li>
+									</ul>
+								</nav>
+								<ul class="address-menu">
+									<li class="address-menu__item">
+										<a class="address-menu__link" href="mailto:info@devstudio.com" aria-label="e-mail">
+											<svg class="icon-letter" width="16" height="12">
+												<use href="./images/icons.svg#icon-letter"></use>
+											</svg>
+											info@devstudio.com
+										</a>
+									</li>
+									<li class="address-menu__item">
+										<a class="address-menu__link mobile-activ" href="tel:+380961111111" aria-label="phone number">
+											<svg class="icon-phone" width="10" height="16">
+												<use href="./images/icons.svg#icon-smartphone"></use>
+											</svg>
+											+38 096 111 11 11
+										</a>
+									</li>
+								</ul>
+				
+								<ul class="mobile-social">
+									<li class="mobile-social__item">
+										<a href="https://www.instagram.com/" target="_blank" rel="noopener norefferer"
+											class="mobile-social__link" aria-label="instagram">
+											Instagram
+										</a>
+									</li>
+									<li class="mobile-social__item">
+										<a href="https://twitter.com/" target="_blank" rel="noopener norefferer" aria-label="twitter"
+											class="mobile-social__link">
+											Twitter
+										</a>
+									</li>
+									<li class="mobile-social__item">
+										<a href="https://www.facebook.com/" target="_blank" rel="noopener norefferer"
+											aria-label="facebook" class="mobile-social__link">
+											Facebook
+										</a>
+									</li>
+									<li class="mobile-social__item">
+										<a href="https://www.linkedin.com/" target="_blank" rel="noopener norefferer"
+											aria-label="linkedin" class="mobile-social__link">
+											LinkedIn
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 		</header>
 
 		<!-- Main -->
@@ -82,93 +106,128 @@
 
 			<!--Peculiarities section-->
 
-			<section class="section peculiarities">
-				<div class="container">
-					<!--Hiden title-->
+<section class="section solutions overlay">
+	<div class="container">
+		<h1 class="solutions__title">Ефективні рішення для вашого бізнесу</h1>
+		<button type="button" class="solutions__btn" data-modal-open>Замовити послугу</button>
+	</div>
+</section>
 
-					<h2 class="visually-hidden">Особливості</h2>
+<!--Peculiarities section-->
 
-					<ul class="peculiarities__items peculiarities__item--top-align list">
-						<li class="peculiarities__item">
-							<div class="peculiarities__thumb">
-								<svg class="peculiarities__icon" width="70" height="70">
-									<use href="./images/icons.svg#icon-antenna"></use>
-								</svg>
-							</div>
-							<h3 class="peculiarities__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="peculiarities__descr">
-								Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-							</p>
-						</li>
+<section class="section peculiarities">
+	<div class="container">
+		<!--Hiden title-->
 
-						<li class="peculiarities__item">
-							<div class="peculiarities__thumb">
-								<svg class="peculiarities__icon" width="70" height="70">
-									<use href="./images/icons.svg#icon-clock-1"></use>
-								</svg>
-							</div>
-							<h3 class="peculiarities__title">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="peculiarities__descr">
-								Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-							</p>
-						</li>
+		<h2 class="visually-hidden">Особливості</h2>
 
-						<li class="peculiarities__item">
-							<div class="peculiarities__thumb">
-								<svg class="peculiarities__icon" width="70" height="70">
-									<use href="./images/icons.svg#icon-diagram"></use>
-								</svg>
-							</div>
-							<h3 class="peculiarities__title">ПЛАНУВАННЯ</h3>
-							<p class="peculiarities__descr">
-								Так само консультація з широким активом значною мірою зумовлює.
-							</p>
-						</li>
-
-						<li class="peculiarities__item">
-							<div class="peculiarities__thumb">
-								<svg class="peculiarities__icon" width="70" height="70">
-									<use href="./images/icons.svg#icon-astronaut"></use>
-								</svg>
-							</div>
-							<h3 class="peculiarities__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="peculiarities__descr">
-								Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-							</p>
-						</li>
-					</ul>
+		<ul class="peculiarities__items peculiarities__item--top-align list">
+			<li class="peculiarities__item">
+				<div class="peculiarities__thumb">
+					<svg class="peculiarities__icon" width="70" height="70">
+						<use href="./images/icons.svg#icon-antenna"></use>
+					</svg>
 				</div>
-			</section>
+				<h3 class="peculiarities__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+				<p class="peculiarities__descr">Ідейні міркування, і навіть початок повсякденної роботи з формування
+					позиції.</p>
+			</li>
+
+			<li class="peculiarities__item">
+				<div class="peculiarities__thumb">
+					<svg class="peculiarities__icon" width="70" height="70">
+						<use href="./images/icons.svg#icon-clock-1"></use>
+					</svg>
+				</div>
+				<h3 class="peculiarities__title">ПУНКТУАЛЬНІСТЬ</h3>
+				<p class="peculiarities__descr">Завдання організації, особливо рамки і місце навчання кадрів тягне у
+					себе.</p>
+			</li>
+
+			<li class="peculiarities__item">
+				<div class="peculiarities__thumb">
+					<svg class="peculiarities__icon" width="70" height="70">
+						<use href="./images/icons.svg#icon-diagram"></use>
+					</svg>
+				</div>
+				<h3 class="peculiarities__title">ПЛАНУВАННЯ</h3>
+				<p class="peculiarities__descr">Так само консультація з широким активом значною мірою зумовлює.</p>
+			</li>
+
+			<li class="peculiarities__item">
+				<div class="peculiarities__thumb">
+					<svg class="peculiarities__icon" width="70" height="70">
+						<use href="./images/icons.svg#icon-astronaut"></use>
+					</svg>
+				</div>
+				<h3 class="peculiarities__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+				<p class="peculiarities__descr">Значимість цих проблем настільки очевидна, що реалізація планових
+					завдань.</p>
+			</li>
+		</ul>
+	</div>
+</section>
 
 			<!-- Doing section -->
-
+			
 			<section class="section doing no-top-padding">
 				<div class="container">
 					<h2 class="doing__title title">Чим ми займаємося</h2>
-					<ul class="doing__items list">
+					<ul class="doing__items">
 						<li class="doing__item">
 							<div class="doing__thumb">
-								<img src="./images/doing/working-table.jpg" width="370" height="294" alt="table" />
+								<picture>
+									<!-- desktop screen -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/doing/lg/working-table_lg.webp 1x, ./images/doing/lg/working-table_lg@2x.webp 2x"
+										type="image/webp" />
+									<source media="(min-width: 1200px)"
+										srcset="./images/doing/lg/working-table_lg.jpg 1x, ./images/doing/lg/working-table_lg@x2.jpg 2x"
+										type="image/jpg" />
+									<img src="./images/doing/lg/working-table_lg.jpg" width="370" height="294" alt="table" />
+								</picture>
+			
 								<h3 class="doing__subtitle">Десктопні додатки</h3>
 							</div>
 						</li>
-
+			
 						<li class="doing__item">
 							<div class="doing__thumb">
-								<img src="./images/doing/phone-laptop.jpg" width="370" height="294" alt="laptop" />
+								<picture>
+									<!-- desktop screen -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/doing/lg/phone-laptop_lg.webp 1x, ./images/doing/lg/phone-laptop_lg@2x.webp 2x"
+										type="image/webp" />
+									<source media="(min-width: 1200px)"
+										srcset="./images/doing/lg/phone-laptop_lg.jpg 1x, ./images/doing/lg/phone-laptop_lg@x2.jpg 2x"
+										type="image/jpg" />
+									<img src="./images/doing/lg/phone-laptop_lg.jpg" width="370" height="294" alt="tablet" />
+								</picture>
+			
 								<h3 class="doing__subtitle">Мобільні додатки</h3>
 							</div>
 						</li>
-
+			
 						<li class="doing__item">
 							<div class="doing__thumb">
-								<img src="./images/doing/tablet.jpg" width="370" height="294" alt="tablet" />
+								<picture>
+									<!-- desktop screen -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/doing/lg/tablet_lg.webp 1x, ./images/doing/lg/tablet_lg@2x.webp 2x"
+										type="image/webp" />
+									<source media="(min-width: 1200px)"
+										srcset="./images/doing/lg/tablet_lg 1x, ./images/doing/lg/tablet_lg@x2.jpg 2x"
+										type="image/jpg" />
+									<img src="./images/doing/lg/tablet_lg.jpg" width="370" height="294" alt="tablet" />
+								</picture>
+			
 								<h3 class="doing__subtitle">Дизайнерські рішення</h3>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
+
 
 			<!-- Our Team section -->
 
