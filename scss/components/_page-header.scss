@@ -1,6 +1,7 @@
 /* Header */
 
 .header {
+	position: relative;
 	border-bottom: 1px solid $header-border-color;
 }
 
@@ -26,22 +27,25 @@
 	&.focus {
 		color: $active-color;
 	}
-	@media screen and (min-width $tablet ) {
+
+	@media screen and (min-width: $tablet) {
 		display: none;	
 	}
-	$__icon-menu {
+
+	&__icon-menu {
 		display: block;
 		fill: currentColor;
 		.mobile-btn.is-open &{
 			display: none;
 		}
 	}
+
 	&__icon-close {
 		display: none;
 		fill: currentColor;
 		
 		.mobile-btn.is-open & {
-				display: none;
+				display: block;
 			}
 	}
 }
@@ -139,22 +143,11 @@
 	}
 }
 
-/* Methods selecting elements for cleaning extreme geometry */
-/*  */
-
 .nav-menu__item:not(:last-child) {
 	@media screen and (min-width: $desktop) {
 		margin-right: 50px;
 	}
 }
-
-/* .nav-menu__item + .nav-menu__item {
-		margin-left: 50px;
-	} */
-
-/* .nav-menu__item:last-child {
-		margin-right: 0;
-	} */
 
 .nav-menu__link {
 	@extend %link;
