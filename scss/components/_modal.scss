@@ -105,7 +105,7 @@
 	border-radius: 4px;
 	outline: transparent;
 	transition: border-color $time-cubic;
-	color: $pure-black;
+	color: black;
 
 	&:focus-within, &:hover {
 		border-color: $active-color;
@@ -137,6 +137,7 @@
 	border-radius: 4px;
 	outline: transparent;
 	transition: border-color $time-cubic;
+	
 
 	&:focus-within, &:hover {
 		border-color: $active-color;
