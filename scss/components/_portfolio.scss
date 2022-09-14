@@ -3,11 +3,22 @@
 /* Filter buttons */
 
 .work__btn-list {
+	@extend %list;
 	display: flex;
-	gap: 8px;
+	row-gap: 15px;
+	column-gap: 8px;
 	margin-bottom: 50px;
 	justify-content: center;
 	align-items: center;
+	@media screen and (max-width: ($tablet - 0.02px))  {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		max-width: 85vw;
+	}
+
+	@media screen and (min-width: $tablet) {
+		gap: 8px;
+	}
 }
 
 .work__btn {
@@ -42,16 +53,26 @@
 /* Cards */
 
 .work-list {
+	@extend %list;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
 }
 
 .work-list__item {
-	flex-basis: calc((100% - 60px) / 3);
+	@include flex-calc($indent, $elements: 1);
+	
+	@media screen and (min-width: $tablet) {
+		@include flex-calc($indent, $elements: 2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		@include flex-calc;
+	}
 }
 
 .work-list__link {
+	@extend %link;
 	display: block;
 	transition: box-shadow $time-cubic;
 
@@ -71,7 +92,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	padding: 63px 24px;
+	padding: 30px;
 	background-color: $overlay-bg-color;
 	transform: translateY(0);
 	transition: transform $time-cubic;
@@ -79,25 +100,28 @@
 	.work-list__link:hover &, .work-list__link:focus & {
 		transform: translateY(-100%);
 	}
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		padding: 49px 24px;
+	}
+	@media screen and (min-width: ($desktop - 0.02px)) {
+		padding: 63px 24px;
+	}
 }
 
 .work-list__overlay-desc {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.55;
 	letter-spacing: 0.03em;
 	color: $prime-white;
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		font-size: 18px;	
+	}
 }
-/* Changed to gap */
-/* .work-card:not(:nth-child(3n)) {
-	margin-right: 30px;
-} */
-/* 
-.work-card:not(:nth-last-child(-n + 3)) {
-	margin-bottom: 30px;
-} */
+
 
 .work-list__content-wrp {
+	flex-grow: 1;
 	padding: 20px 24px;
 	border-left: 1px solid $border-color;
 	border-right: 1px solid $border-color;
