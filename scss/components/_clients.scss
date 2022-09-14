@@ -1,5 +1,16 @@
 /* Our Clients */
 
+.clients__item {
+	@include flex-calc($indent, $elements: 2);
+
+	@media screen and (min-width: $tablet) {
+		@include flex-calc($indent, $elements: 3);
+	}
+
+	@media screen and (min-width: $desktop) {
+		@include flex-calc($indent, $elements: 6);
+	}
+}
 .clients__link {
 	display: flex;
 	justify-content: center;
