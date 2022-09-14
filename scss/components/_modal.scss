@@ -14,6 +14,24 @@
 	border-radius: 4px;
 	opacity: 1;
 	z-index: 4;
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		max-width: 450px;
+		width: 100%;
+	}
+
+	@media screen and (min-width: $tablet) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: 528px;
+		max-height: 581px;
+		
+	}
+
 }
 
 .modal__close-btn {
@@ -146,19 +164,19 @@
 	display: flex;
 	align-items: center;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.16;
 	letter-spacing: 0.03em;
-	margin-left: 8px;
-	color: $grey-text;
-}
-/* Modern hidden checkbox */
-/* .checkbox {
-	position: absolute;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-} */
+	@media screen and (min-width: $desktop) {
+		color: #757575;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		margin-left: 8px;
+		color: $grey-text;
+	}
+
 
 .modal-form__checkbox-icon {
 	margin-right: 8px;
@@ -192,14 +210,26 @@
 	font-style: normal;
 	color: $active-color;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 1.16;
 	letter-spacing: 0.03em;
-	margin-left: 6px;
-	outline-color: transparent;
-	transition: outline-color $time-cubic;
-	text-underline-position: under;
 
+	@media screen and (min-width: ($mobile - 0.02px)) {
+		font-size: 12px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		margin-left: 6px;
+		outline-color: transparent;
+		transition: outline-color $time-cubic;
+		text-underline-position: under;
+	}
 	&:focus {
 		outline-color: $active-color;
 	}
