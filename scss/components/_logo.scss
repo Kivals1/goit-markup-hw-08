@@ -11,7 +11,7 @@
 	letter-spacing: 0.03em;
 	color: $active-color;
 
-	@media screen and (min-width: ($tablet - 0.02px)) {
+	@media screen and (min-width: $tablet) {
 			position: static;
 		}
 	

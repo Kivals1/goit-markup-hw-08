@@ -66,7 +66,7 @@
 			opacity: 1;
 		}
 	
-		@media screen and (max-width: ($tablet - 0.02px)) {
+		@media screen and (max-width: $tablet) {
 			display: none;
 			position: fixed;
 			top: 0;
@@ -113,14 +113,14 @@
 	@extend %list;
 	display: flex;
 
-	@media screen and (max-width: ($tablet - 0.02px)) {
+	@media screen and (max-width: $tablet) {
 		flex-direction: column-reverse;
 		align-items: flex-start;
 		gap: 32px;
 		margin-top: auto;
 	}
 
-	@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02px)) {
+	@media screen and (min-width: $tablet) and (max-width: $desktop) {
 		flex-direction: column;
 		gap: 10px;
 		font-weight: 500;
@@ -247,12 +247,12 @@
 	line-height: 1.18;
 	letter-spacing: 0.02em;
 
-	@media screen and (max-width: ($mobile - 0.02px)) {
+	@media screen and (max-width: $mobile) {
 		color: $active-color;
 		font-size: 23px;
 	}
 
-	@media screen and (min-width: $mobile) and (max-width: ($tablet - 0.02px)) {
+	@media screen and (min-width: $mobile) and (max-width: $tablet) {
 		color: $active-color;
 		font-size: 34px;
 	}
@@ -261,7 +261,7 @@
 .mobile-social {
 	display: none;
 
-	@media screen and (max-width: ($tablet - 0.02px)) {
+	@media screen and (max-width: $tablet) {
 		display: flex;
 		margin-top: 64px;
 	}
@@ -291,7 +291,7 @@
 	letter-spacing: 0.02em;
 	color: #2196f3;
 
-	@media screen and (min-width: ($mobile - 0.02px)) {
+	@media screen and (min-width: $mobile) {
 		font-size: 18px;
 		line-height: 1.22;
 	}

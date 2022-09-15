@@ -1,7 +1,7 @@
 /* Doing section */
 
 .doing {
-	@media screen and (max-width: ($desktop - 0.02px)) {
+	@media screen and (max-width: $desktop) {
 		display: none;
 	}
 }

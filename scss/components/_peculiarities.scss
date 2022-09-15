@@ -36,7 +36,7 @@
 	text-transform: uppercase;
 	color: $prime-color;
 	letter-spacing: 0.03em;
-	@media screen and (max-width: ($tablet - 0.02px)) {
+	@media screen and (max-width: $tablet) {
 		text-align: center;
 	}
 }

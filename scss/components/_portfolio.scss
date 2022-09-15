@@ -10,7 +10,7 @@
 	margin-bottom: 50px;
 	justify-content: center;
 	align-items: center;
-	@media screen and (max-width: ($tablet - 0.02px))  {
+	@media screen and (max-width: $tablet)  {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		max-width: 85vw;
@@ -100,10 +100,10 @@
 	.work-list__link:hover &, .work-list__link:focus & {
 		transform: translateY(-100%);
 	}
-	@media screen and (min-width: ($mobile - 0.02px)) {
+	@media screen and (min-width: $mobile) {
 		padding: 49px 24px;
 	}
-	@media screen and (min-width: ($desktop - 0.02px)) {
+	@media screen and (min-width: $desktop ) {
 		padding: 63px 24px;
 	}
 }
@@ -114,7 +114,7 @@
 	line-height: 1.55;
 	letter-spacing: 0.03em;
 	color: $prime-white;
-	@media screen and (min-width: ($mobile - 0.02px)) {
+	@media screen and (min-width: $mobile) {
 		font-size: 18px;	
 	}
 }
