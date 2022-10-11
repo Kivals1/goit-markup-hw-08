@@ -1,0 +1,172 @@
+<section class="contacts section" id="contacts">
+ <div class="container">
+  <h2 class="hidden">Contacts</h2>
+  <div class="contacts__card-wrap">
+   <ul class="contacts__list">
+    <li class="contacts__item">
+     <p class="contacts__title"><span>Cafe</span></p>
+     <div class="contacts__address">
+      <h3 class="contacts__location">Chicago</h3>
+      <p class="contacts__text">
+       10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+      </p>
+     </div>
+     <ul class="contacts__work">
+      <li class="contacts__work-time">
+       <h3 class="contacts__day">Monday - Friday</h3>
+       <p class="contacts__time">06:00 AM - 10:00 PM</p>
+      </li>
+      <li class="contacts__work-time">
+       <h3 class="contacts__day">Saturday - Sunday</h3>
+       <p class="contacts__time">08:00 AM - 16:00 PM</p>
+      </li>
+     </ul>
+     <ul class="contacts__connection">
+      <li class="contacts__tel">
+       <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+      </li>
+      <li class="contacts__mail">
+       <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+      </li>
+     </ul>
+    </li>
+    <li class="contacts__item">
+     <p class="contacts__title contacts__title--green">
+      <span>Food truck</span>
+     </p>
+     <div class="contacts__address">
+      <h3 class="contacts__location">Los Angeles</h3>
+      <p class="contacts__text">
+       Fusce ut velit laoreet, tempus arcu molestie vulputate
+      </p>
+     </div>
+     <ul class="contacts__work">
+      <li class="contacts__work-time">
+       <h3 class="contacts__day">Monday - Friday</h3>
+       <p class="contacts__time">06:00 AM - 10:00 PM</p>
+      </li>
+      <li class="contacts__work-time">
+       <h3 class="contacts__day">Saturday - Sunday</h3>
+       <p class="contacts__time">08:00 AM - 16:00 PM</p>
+      </li>
+     </ul>
+     <ul class="contacts__connection">
+      <li class="contacts__tel">
+       <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+      </li>
+      <li class="contacts__mail">
+       <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+      </li>
+     </ul>
+    </li>
+    <li class="contacts__item">
+     <p class="contacts__title">
+      <span>Cafe</span>
+     </p>
+     <div class="contacts__address">
+      <h3 class="contacts__location">New York</h3>
+      <p class="contacts__text">
+       Fusce ut velit laoreet, tempus arcu molestie vulputate
+      </p>
+     </div>
+     <ul class="contacts__work">
+      <li class="contacts__work-time">
+       <h3 class="contacts__day">Monday - Friday</h3>
+       <p class="contacts__time">06:00 AM - 10:00 PM</p>
+      </li>
+      <li class="contacts__work-time">
+       <h3 class="contacts__day">Saturday - Sunday</h3>
+       <p class="contacts__time">08:00 AM - 16:00 PM</p>
+      </li>
+     </ul>
+     <ul class="contacts__connection">
+      <li class="contacts__tel">
+       <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
+      </li>
+      <li class="contacts__mail">
+       <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <div class="contacts__button-wrap">
+   <button class="contacts__button--locations js-open-modal" type="button" data-modal="9">
+    Our Locations
+    <svg class="contacts__button--svg" width="9" height="9">
+     <use href="./images/icon-sprite.svg#icon-arrow-right"></use>
+    </svg>
+   </button>
+   <button class="contacts__button--franchise js-open-modal" type="button" data-modal="10">
+    Franchise
+    <svg class="contacts__button--svg" width="9" height="9">
+     <use href="./images/icon-sprite.svg#icon-arrow-right"></use>
+    </svg>
+   </button>
+  </div>
+ </div>
+ <div class="overlay js-overlay-modal"></div>
+ <div class="modal contacts-modal" data-modal="10">
+  <button class="contacts-franchise__btn js-modal-close">
+   <svg class="contacts-modal__icon" width="12" height="15">
+    <use href="./images/icon-sprite.svg#icon-cross"></use>
+   </svg>
+  </button>
+  <p class="contacts-modal__title">Our partners</p>
+  <ul class="contacts-modal__list">
+   <li class="contacts-modal__item">
+    <a class="contacts-modal__link">
+  <form class="franchise-form" name="franchise-form" autocomplete="off">
+   <p class="franchise-form__title">Join us and be our partners!</p>
+   <label class="franchise-form__label">
+    <span class="franchise-form__name">Name</span>
+    <span class="franchise-form__container">
+     <input class="franchise-form__input" type="text" name="name" required />
+     <svg class="franchise-form__icon" width="20" height="20">
+      <use href="./images/icon-sprite.svg#person_modal"></use>
+     </svg>
+    </span>
+   </label>
+   <label class="franchise-form__label">
+    <span class="franchise-form__name">Phone number</span>
+    <span class="franchise-form__container">
+     <input class="franchise-form__input" type="tel" name="tel" required />
+     <svg class="franchise-form__icon" width="20" height="20">
+      <use href="./images/icon-sprite.svg#phone_modal"></use>
+     </svg>
+    </span>
+   </label>
+   <label class="franchise-form__label">
+    <span class="franchise-form__name">Email</span>
+    <span class="franchise-form__container">
+     <input class="franchise-form__input" type="email" name="mail" required />
+     <svg class="franchise-form__icon" width="20" height="20">
+      <use href="./images/icon-sprite.svg#email_modal"></use>
+     </svg>
+    </span>
+   </label>
+   <label class="franchise-form__label">
+   <span class="franchise-form__name">Comments</span>
+   <span class="franchise-form__container">
+    <input class="franchise-form__input" type="email" name="mail" required />
+    <svg class="franchise-form__icon" width="20" height="20">
+     <use href="./images/icon-sprite.svg#email_modal"></use>
+    </svg>
+   </span>
+   </label>
+   <button type="submit" class="franchise-btn">Submit</button>
+  </form>
+ </div>
+ <div class="modal contacts-location__modal" data-modal="9">
+  <button class="contacts-location__btn js-modal-close">
+   <svg class="contacts-modal__icon" width="12" height="15">
+    <use href="./images/icon-sprite.svg#icon-cross"></use>
+   </svg>
+  </button>
+  <p class="contacts-location__title">Open map</p>
+  <iframe class="frame"
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0352764852137!2d30.5114729156975!3d50.440443579474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef96106f7b3%3A0x27b37ddfa711910!2z0YPQuy4g0JvRjNCy0LAg0KLQvtC70YHRgtC-0LPQviwgNywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1656268288318!5m2!1sru!2sua"
+   width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+   referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+</section>
